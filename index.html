@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutuparna Panigrahi - Software Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        * { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+<!-- Navigation -->
+<nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+            <div class="text-2xl font-bold gradient-text">Rutuparna Panigrahi</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-purple-600">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-purple-600">About</a>
+                <a href="#skills" class="text-gray-700 hover:text-purple-600">Skills</a>
+                <a href="#projects" class="text-gray-700 hover:text-purple-600">Projects</a>
+                <a href="#contact" class="text-gray-700 hover:text-purple-600">Contact</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+    
+    <!-- Background Slider -->
+    <div class="absolute inset-0">
+        <div class="slider flex w-full h-full transition-transform duration-700">
+            <img src="./img1.jpg" class="w-full h-full object-cover" alt="Image 1">
+            <img src="./img2.jpg" class="w-full h-full object-cover" alt="Image 2">
+            <img src="./img3.jpg" class="w-full h-full object-cover" alt="Image 3">
+        </div>
+        <!-- Optional dark overlay for better text visibility -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    </div>
+
+    <!-- Foreground Content -->
+    <div class="relative z-10 text-center px-4 max-w-4xl">
+        <div class="floating mb-8">
+            <img src="profile.jpg" 
+                 alt="Rutuparna Panigrahi" 
+                 class="w-56 h-56 rounded-full mx-auto border-4 border-purple-400 shadow-lg object-cover"
+                 style="object-position: center -10px;">
+        </div>
+        <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">
+            Hi, I'm <span class="gradient-text">Rutuparna Panigrahi</span>
+        </h1>
+        <p class="text-lg text-gray-200 mb-6">
+            Software Developer | 3+ Years Experience in Java, Spring Boot, Angular & Microservices
+        </p>
+        <a href="#projects" class="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg">
+            View My Work
+        </a>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-gray-800 mb-6">About Me</h2>
+        <p class="text-lg text-gray-600 mb-4">
+            I am a passionate Software Developer with 3 years of experience in building Web-based and Distributed Architecture Applications using Java, Spring Boot, Angular, and Microservices. Skilled in designing and developing scalable applications while following industry best practices.
+        </p>
+        <p class="text-lg text-gray-600 mb-4">
+            My expertise includes Core Java, Spring Boot, Angular, TypeScript, JavaScript, Microservices-based web services, and database management with MySQL, Oracle, and PostgreSQL.
+        </p>
+        <p class="text-lg text-gray-600">
+            Currently working at CSM Technologies (CMMI L5), contributing to impactful government and enterprise projects.
+        </p>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-gray-800 mb-10 text-center">Technical Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <h3 class="text-2xl font-semibold mb-4">Programming & Frameworks</h3>
+                <ul class="list-disc ml-6 text-gray-700 space-y-2">
+                    <li>Java 8, Java 17, JavaScript, TypeScript</li>
+                    <li>Spring Boot, Spring MVC, Restful Services</li>
+                    <li>Angular 14/16, HTML, CSS, Bootstrap</li>
+                    <li>Microservices, JWT, Spring Security</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-2xl font-semibold mb-4">Tools & Databases</h3>
+                <ul class="list-disc ml-6 text-gray-700 space-y-2">
+                    <li>MySQL, Oracle 12c, PostgreSQL (PGAdmin4)</li>
+                    <li>Tomcat, Azure Cloud</li>
+                    <li>Git, Maven, Postman, STS</li>
+                    <li>Agile Methodology</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-gray-800 mb-10 text-center">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition">
+                <h3 class="text-xl font-semibold mb-2">Rawanda Corporative Agency</h3>
+                <p class="text-gray-600 text-sm mb-4">Web application for Rwanda Govt to process, capture, store, manage and track documents with integrated workflow and Spring Security (JWT).</p>
+                <p class="text-sm text-purple-600">Tech: Java 8, Spring Boot, MySQL, Microservices</p>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition">
+                <h3 class="text-xl font-semibold mb-2">Document Management System</h3>
+                <p class="text-gray-600 text-sm mb-4">Internal tool for processing, storing, and managing documents with version control and access permissions.</p>
+                <p class="text-sm text-purple-600">Tech: Java 8, Spring Boot, MySQL, Microservices</p>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition">
+                <h3 class="text-xl font-semibold mb-2">Content Management System</h3>
+                <p class="text-gray-600 text-sm mb-4">Backend for a low-code website builder with dynamic navigation, banners, and built-in code editor for customization.</p>
+                <p class="text-sm text-purple-600">Tech: Java 17, Spring Boot, Angular 16, PostgreSQL</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">Contact Me</h2>
+        <p class="text-lg text-gray-600 mb-6">Feel free to reach out for collaboration or opportunities.</p>
+        <p class="text-gray-700">📧 rutu121payal@gmail.com</p>
+        <p class="text-gray-700">📱 +91-7978919442</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-6 text-center">
+    <p>&copy; 2025 Rutuparna Panigrahi. All Rights Reserved.</p>
+</footer>
+
+</body>
+<script>
+    const slider = document.querySelector('.slider');
+    let currentIndex = 0;
+
+    function slideImages() {
+        currentIndex = (currentIndex + 1) % slider.children.length;
+        slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    setInterval(slideImages, 4000); // Change every 4 seconds
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+</html>
